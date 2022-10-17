@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        app:cardCornerRadius="3sp"
+        android:layout_height="90sp"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:paddingTop="10sp"
+            android:paddingHorizontal="10sp"
+            android:text="Fecha"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/Detalles"
+            android:src="@drawable/ic_info"
+            android:background="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:textSize="18sp"
+            android:text="Detalles"
+            android:layout_marginHorizontal="10sp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="4sp"
+        app:dividerInsetStart="16dp"
+        app:dividerInsetEnd="16dp"/>
+
+</LinearLayout>

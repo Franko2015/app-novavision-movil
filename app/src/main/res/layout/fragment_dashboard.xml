@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/Nav"
+    tools:context=".Principal.ui.payments.PaymentsFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_margin="10sp"
+        android:text="@string/mis_boletas"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Pagados"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="15sp"
+        android:layout_marginBottom="40sp"
+        android:background="@color/transparent">
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

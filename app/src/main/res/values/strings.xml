@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">NOVA VISIÓN</string>
+    <string name="title_home_nav">NOVA VISIÓN</string>
+    <string name="title_activity_main">Nova visión</string>
+    <string name="title_home">INFORMACIÓN DE NUESTRA EMPRESA</string>
+    <string name="title_dashboard">PAGOS</string>
+    <string name="title_notifications">NOTIFICACIONES</string>
+    <string name="title_velocidad">TESTEO</string>
+    <string name="title_activity_mapa">Mapa</string>
+    <string name="title_activity_all_plans">PLANES</string>
+    <string name="inicio">INICIO</string>
+    <string name="consultas">http://192.168.18.224/App/BD-NOVA/</string>
+    <string name="clave">b838e0cb6410592a424cf1ee40353e28974462a3</string>
+    <string name="pagina_oficial">http://novavision.cl/</string>
+    <string name="portal_cliente"><a href="https://novaspa.novavision.cl/cliente/login">PORTAL CLIENTE</a></string>
+
+    <string-array name="oficinas">
+        <item>Todas las oficinas</item>
+        <item>Romeral</item>
+        <item>Colbún</item>
+        <item>Lontue</item>
+        <item>Los Niches</item>
+        <item>Molina Agua Fria</item>
+        <item>Molina Centro</item>
+        <item>Pelarco</item>
+        <item>Rio claro</item>
+        <item>Sagrada Familia</item>
+        <item>San Clemente</item>
+        <item>San Rafael</item>
+        <item>Talca</item>
+        <item>Teno</item>
+    </string-array>
+
+    <string-array name="main">
+        <item>Perfil</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="espere_resultados_por_favor">Espere resultados por favor</string>
+    <string name="mis_boletas">Mis boletas</string>
+    <string name="notificaciones">Notificaciones</string>
+    <string name="perfil">Perfil</string>
+    <string name="portal_clientes">Portal cliente</string>
+    <string name="soporte">Soporte</string>
+    <string name="p_gina_oficial">Página oficial</string>
+    <string name="teno">TENO</string>
+    <string name="san_clemente">SAN CLEMENTE</string>
+    <string name="san_rafael">SAN RAFAEL</string>
+    <string name="todo">TODO</string>
+    <string name="sarmiento">SARMIENTO</string>
+    <string name="talca">TALCA</string>
+    <string name="los_niches">LOS NICHES</string>
+    <string name="molina_agua_fr_a">MOLINA AGUA FRÍA</string>
+    <string name="molina_centro">MOLINA CENTRO</string>
+    <string name="pelarco">PELARCO</string>
+    <string name="rio_claro">RIO CLARO</string>
+    <string name="sagrada_familia">SAGRADA FAMILIA</string>
+    <string name="colb_n">COLBÚN</string>
+    <string name="nuestras_sucursales">Nuestras sucursales</string>
+    <string name="sucursales">Sucursales</string>
+    <string name="guardar_cambios">Guardar cambios</string>
+    <string name="volver">Volver</string>
+</resources>

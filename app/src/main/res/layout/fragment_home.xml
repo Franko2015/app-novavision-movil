@@ -1,0 +1,1077 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Principal.ui.home.HomeFragment">
+
+    <Button
+        android:outlineSpotShadowColor="@color/transparent"
+        android:id="@+id/Perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/transparent"
+        app:drawableTopCompat="@drawable/ic_menu"
+        android:layout_margin="0sp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="2">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/PORTAL_CLIENTE2"
+            android:backgroundTint="@color/fondo_azul2"
+            android:outlineSpotShadowColor="@color/transparent"
+            android:outlineAmbientShadowColor="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:id="@+id/PORTAL_CLIENTE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:layout_marginVertical="20sp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/PORTAL_CLIENTE3"
+                    android:layout_width="80sp"
+                    android:layout_height="80sp"
+                    android:src="@drawable/ic_portal"
+                    android:backgroundTint="@color/transparent"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    android:id="@+id/PORTAL_CLIENTE4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform"
+                    android:shadowColor="#000000"
+                    android:shadowDx="2.0"
+                    android:shadowDy="2.0"
+                    android:shadowRadius="10.0"
+                    android:text="@string/portal_clientes" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/SOPORTE2"
+            android:backgroundTint="@color/fondo_azul2"
+            android:outlineSpotShadowColor="@color/transparent"
+            android:outlineAmbientShadowColor="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:id="@+id/SOPORTE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:layout_marginVertical="20sp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/SOPORTE3"
+                    android:layout_width="80sp"
+                    android:layout_height="80sp"
+                    android:src="@drawable/ic_soporte"
+                    android:backgroundTint="@color/transparent"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    android:id="@+id/SOPORTE4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform"
+                    android:shadowColor="#000000"
+                    android:shadowDx="2.0"
+                    android:shadowDy="2.0"
+                    android:shadowRadius="10.0"
+                    android:text="@string/soporte" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/PLANES2"
+            android:backgroundTint="@color/fondo_azul2"
+            android:outlineSpotShadowColor="@color/transparent"
+            android:outlineAmbientShadowColor="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:id="@+id/PLANES"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:layout_marginVertical="20sp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/PLANES3"
+                    android:layout_width="80sp"
+                    android:layout_height="80sp"
+                    android:src="@drawable/ic_tv"
+                    android:backgroundTint="@color/transparent"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    android:id="@+id/PLANES4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform"
+                    android:shadowColor="#000000"
+                    android:shadowDx="2.0"
+                    android:shadowDy="2.0"
+                    android:shadowRadius="10.0"
+                    android:text="@string/p_gina_oficial" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/OFICINAS2"
+            android:backgroundTint="@color/fondo_azul2"
+            android:outlineSpotShadowColor="@color/transparent"
+            android:outlineAmbientShadowColor="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:id="@+id/OFICINAS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:layout_marginVertical="20sp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/OFICINAS3"
+                    android:layout_width="80sp"
+                    android:layout_height="80sp"
+                    android:src="@drawable/ic_nuestras_oficinas"
+                    android:backgroundTint="@color/transparent"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    android:id="@+id/OFICINAS4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform"
+                    android:shadowColor="#000000"
+                    android:shadowDx="2.0"
+                    android:shadowDy="2.0"
+                    android:shadowRadius="10.0"
+                    android:text="@string/sucursales" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nuestras_sucursales"
+        android:textAlignment="center"
+        android:background="@color/fondo_azul"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginVertical="5sp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5sp"
+        android:layout_marginHorizontal="10sp"
+        android:backgroundTint="@color/fondo_azul2"
+        android:outlineAmbientShadowColor="@color/transparent"
+        android:outlineSpotShadowColor="@color/transparent"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="15sp"
+        android:layout_marginBottom="40sp"
+        android:background="@color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10sp"
+                android:outlineSpotShadowColor="@color/transparent"
+                android:backgroundTint="@color/transparent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:text="ROMERAL"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="20sp"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform" />
+
+                <ImageButton
+                    android:id="@+id/U_ROMERAL"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginVertical="5sp"
+                    android:background="@drawable/ic_ubicacion"
+                    android:layout_marginHorizontal="160sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/ROMERAL"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/whatsapp"
+                    android:layout_marginHorizontal="80sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/LlamarROMERAL"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/ic_telefono"
+                    android:layout_gravity="center|right"
+                    android:layout_marginHorizontal="5sp"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                app:dividerInsetStart="16dp"
+                app:dividerInsetEnd="16dp"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:outlineSpotShadowColor="@color/transparent"
+                android:backgroundTint="@color/transparent">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20sp"
+                    android:background="@color/transparent"
+                    android:text="@string/colb_n"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform" />
+
+                <ImageButton
+                    android:id="@+id/U_COLBUN"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginVertical="5sp"
+                    android:background="@drawable/ic_ubicacion"
+                    android:layout_marginHorizontal="160sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/COLBUN"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/whatsapp"
+                    android:layout_marginHorizontal="80sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/LlamarCOLBUN"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/ic_telefono"
+                    android:layout_gravity="center|right"
+                    android:layout_marginHorizontal="5sp"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                app:dividerInsetStart="16dp"
+                app:dividerInsetEnd="16dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:outlineSpotShadowColor="@color/transparent"
+                android:backgroundTint="@color/transparent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20sp"
+                    android:layout_gravity="center"
+                    android:background="@color/transparent"
+                    android:text="LONTUE"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform" />
+
+                <ImageButton
+                    android:id="@+id/U_LONTUE"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginVertical="5sp"
+                    android:background="@drawable/ic_ubicacion"
+                    android:layout_marginHorizontal="160sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/LONTUE"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/whatsapp"
+                    android:layout_marginHorizontal="80sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/LlamarLONTUE"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/ic_telefono"
+                    android:layout_gravity="center|right"
+                    android:layout_marginHorizontal="5sp"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                app:dividerInsetStart="16dp"
+                app:dividerInsetEnd="16dp"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:outlineSpotShadowColor="@color/transparent"
+                android:backgroundTint="@color/transparent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20sp"
+                    android:background="@color/transparent"
+                    android:layout_gravity="center"
+                    android:text="@string/los_niches"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform" />
+
+                <ImageButton
+                    android:id="@+id/U_LOS_NICHES"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginVertical="5sp"
+                    android:background="@drawable/ic_ubicacion"
+                    android:layout_marginHorizontal="160sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/LOS_NICHES"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/whatsapp"
+                    android:layout_marginHorizontal="80sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/LlamarLOS_NICHES"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/ic_telefono"
+                    android:layout_gravity="center|right"
+                    android:layout_marginHorizontal="5sp"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                app:dividerInsetStart="16dp"
+                app:dividerInsetEnd="16dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:outlineSpotShadowColor="@color/transparent"
+                android:backgroundTint="@color/transparent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20sp"
+                    android:background="@color/transparent"
+                    android:layout_gravity="center"
+                    android:text="@string/molina_agua_fr_a"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform" />
+
+                <ImageButton
+                    android:id="@+id/U_MOLINA_AGUA_FRIA"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginVertical="5sp"
+                    android:background="@drawable/ic_ubicacion"
+                    android:layout_marginHorizontal="160sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"/>
+
+                <ImageButton
+                    android:id="@+id/MOLINA_AGUA_FRIA"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/whatsapp"
+                    android:layout_marginHorizontal="80sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/LlamarMOLINAAF"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/ic_telefono"
+                    android:layout_gravity="center|right"
+                    android:layout_marginHorizontal="5sp"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                app:dividerInsetStart="16dp"
+                app:dividerInsetEnd="16dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:outlineSpotShadowColor="@color/transparent"
+                android:backgroundTint="@color/transparent">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20sp"
+                    android:background="@color/transparent"
+                    android:text="@string/molina_centro"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform" />
+
+                <ImageButton
+                    android:id="@+id/U_MOLINA_CENTRO"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginVertical="5sp"
+                    android:background="@drawable/ic_ubicacion"
+                    android:layout_marginHorizontal="160sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/MOLINA_CENTRO"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/whatsapp"
+                    android:layout_marginHorizontal="80sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/LlamarMOLINAC"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/ic_telefono"
+                    android:layout_gravity="center|right"
+                    android:layout_marginHorizontal="5sp"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                app:dividerInsetStart="16dp"
+                app:dividerInsetEnd="16dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:outlineSpotShadowColor="@color/transparent"
+                android:backgroundTint="@color/transparent">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20sp"
+                    android:background="@color/transparent"
+                    android:text="@string/pelarco"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform" />
+
+                <ImageButton
+                    android:id="@+id/U_PELARCO"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginVertical="5sp"
+                    android:background="@drawable/ic_ubicacion"
+                    android:layout_marginHorizontal="160sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/PELARCO"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/whatsapp"
+                    android:layout_marginHorizontal="80sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/LlamarPELARCO"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/ic_telefono"
+                    android:layout_gravity="center|right"
+                    android:layout_marginHorizontal="5sp"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                app:dividerInsetStart="16dp"
+                app:dividerInsetEnd="16dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:outlineSpotShadowColor="@color/transparent"
+                android:backgroundTint="@color/transparent">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20sp"
+                    android:background="@color/transparent"
+                    android:text="@string/rio_claro"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform" />
+
+                <ImageButton
+                    android:id="@+id/U_RIO_CLARO"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginVertical="5sp"
+                    android:background="@drawable/ic_ubicacion"
+                    android:layout_marginHorizontal="160sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/RIO_CLARO"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/whatsapp"
+                    android:layout_marginHorizontal="80sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/LlamarRIO_CLARO"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/ic_telefono"
+                    android:layout_gravity="center|right"
+                    android:layout_marginHorizontal="5sp"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                app:dividerInsetStart="16dp"
+                app:dividerInsetEnd="16dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:outlineSpotShadowColor="@color/transparent"
+                android:backgroundTint="@color/transparent">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20sp"
+                    android:background="@color/transparent"
+                    android:text="@string/sagrada_familia"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform" />
+
+                <ImageButton
+                    android:id="@+id/U_SAGRADA_FAMILIA"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginVertical="5sp"
+                    android:background="@drawable/ic_ubicacion"
+                    android:layout_marginHorizontal="160sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/SAGRADA_FAMILIA"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/whatsapp"
+                    android:layout_marginHorizontal="80sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/LlamarSAGRADA_FAMILIA"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/ic_telefono"
+                    android:layout_gravity="center|right"
+                    android:layout_marginHorizontal="5sp"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                app:dividerInsetStart="16dp"
+                app:dividerInsetEnd="16dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:outlineSpotShadowColor="@color/transparent"
+                android:backgroundTint="@color/transparent">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20sp"
+                    android:background="@color/transparent"
+                    android:text="@string/san_clemente"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform" />
+
+                <ImageButton
+                    android:id="@+id/U_SAN_CLEMENTE"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginVertical="5sp"
+                    android:background="@drawable/ic_ubicacion"
+                    android:layout_marginHorizontal="160sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded,TooManyViews"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/SAN_CLEMENTE"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/whatsapp"
+                    android:layout_marginHorizontal="80sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/LlamarSAN_CLEMENTE"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/ic_telefono"
+                    android:layout_gravity="center|right"
+                    android:layout_marginHorizontal="5sp"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                app:dividerInsetStart="16dp"
+                app:dividerInsetEnd="16dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:outlineSpotShadowColor="@color/transparent"
+                android:backgroundTint="@color/transparent">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20sp"
+                    android:background="@color/transparent"
+                    android:text="@string/san_rafael"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform" />
+
+                <ImageButton
+                    android:id="@+id/U_SAN_RAFAEL"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginVertical="5sp"
+                    android:background="@drawable/ic_ubicacion"
+                    android:layout_marginHorizontal="160sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/SAN_RAFAEL"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/whatsapp"
+                    android:layout_marginHorizontal="80sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/LlamarSAN_RAFAEL"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/ic_telefono"
+                    android:layout_gravity="center|right"
+                    android:layout_marginHorizontal="5sp"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                app:dividerInsetStart="16dp"
+                app:dividerInsetEnd="16dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:outlineSpotShadowColor="@color/transparent"
+                android:backgroundTint="@color/transparent">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20sp"
+                    android:background="@color/transparent"
+                    android:text="@string/sarmiento"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform" />
+
+                <ImageButton
+                    android:id="@+id/U_SARMIENTO"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginVertical="5sp"
+                    android:background="@drawable/ic_ubicacion"
+                    android:layout_marginHorizontal="160sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/SARMIENTO"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/whatsapp"
+                    android:layout_marginHorizontal="80sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/LlamarSARMIENTO"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/ic_telefono"
+                    android:layout_gravity="center|right"
+                    android:layout_marginHorizontal="5sp"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                app:dividerInsetStart="16dp"
+                app:dividerInsetEnd="16dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:outlineSpotShadowColor="@color/transparent"
+                android:backgroundTint="@color/transparent">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20sp"
+                    android:background="@color/transparent"
+                    android:text="@string/talca"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform" />
+
+                <ImageButton
+                    android:id="@+id/U_TALCA"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginVertical="5sp"
+                    android:background="@drawable/ic_ubicacion"
+                    android:layout_marginHorizontal="160sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/TALCA"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/whatsapp"
+                    android:layout_marginHorizontal="80sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/LlamarTALCA"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/ic_telefono"
+                    android:layout_gravity="center|right"
+                    android:layout_marginHorizontal="5sp"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                app:dividerInsetStart="16dp"
+                app:dividerInsetEnd="16dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20sp"
+                android:outlineSpotShadowColor="@color/transparent"
+                android:backgroundTint="@color/transparent">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20sp"
+                    android:background="@color/transparent"
+                    android:text="@string/teno"
+                    android:textColor="@color/white"
+                    android:autoSizeTextType="uniform" />
+
+                <ImageButton
+                    android:id="@+id/U_TENO"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginVertical="5sp"
+                    android:background="@drawable/ic_ubicacion"
+                    android:layout_marginHorizontal="160sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/TENO"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/whatsapp"
+                    android:layout_marginHorizontal="80sp"
+                    android:layout_gravity="right|center"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+                <ImageButton
+                    android:id="@+id/LlamarTENO"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/ic_telefono"
+                    android:layout_gravity="center|right"
+                    android:layout_marginHorizontal="5sp"
+                    tools:ignore="RtlHardcoded"
+                    android:contentDescription="@string/todo" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

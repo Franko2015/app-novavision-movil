@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Principal.Mapa">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tittle"
+        android:rowCount="3"
+        android:columnCount="2">
+
+        <TextView
+            android:id="@+id/Volver"
+            android:layout_width="70sp"
+            android:layout_height="70sp"
+            android:layout_margin="25sp"
+            android:layout_gravity="fill"
+            android:background="@drawable/custom_input"
+            android:gravity="center"
+            android:text="Volver"
+            android:textSize="20sp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:gravity="center"
+            android:paddingHorizontal="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="25sp"
+            android:background="@drawable/custom_input"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+    </GridLayout>
+
+
+</fragment>
