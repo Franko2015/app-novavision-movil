@@ -8,6 +8,7 @@
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/TarjetaPago"
         android:background="@color/transparent"
         android:layout_width="match_parent"
         app:cardCornerRadius="5sp"

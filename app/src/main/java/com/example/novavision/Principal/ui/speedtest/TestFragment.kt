@@ -54,7 +54,7 @@ class TestFragment : Fragment() {
                 webView = binding.webView
                 webView.webChromeClient = WebChromeClient()
                 webView.webViewClient = WebViewClient()
-                webView.loadUrl("https://www.speedtest.net/")
+                webView.loadUrl("https://novavision.speedtestcustom.com")
             }
         builder.setNegativeButton("Cancelar"
         ) { _, _ ->

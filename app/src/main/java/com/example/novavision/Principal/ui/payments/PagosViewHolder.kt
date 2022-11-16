@@ -1,6 +1,7 @@
 package com.example.novavision.Principal.ui.payments
 
 import android.app.AlertDialog
+import android.graphics.Color
 import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
@@ -15,9 +16,17 @@ class PagosViewHolder(view: View): RecyclerView.ViewHolder(view) {
         binding.Descripcion.text = pagos.Descripcion
         binding.Estado.text = pagos.Estado
 
+        if (pagos.Estado.equals("No pagado")){
+            binding.Estado.setTextColor(Color.parseColor("#FF0000"))
+        }else if (pagos.Estado.equals("pagado")){
+            binding.Estado.setTextColor(Color.parseColor("#199103"))
+        }
+
+
         binding.detalles.setOnClickListener{
 
             val builder: AlertDialog.Builder = AlertDialog.Builder(binding.detalles.context)
+
             if (pagos.Estado.equals("No pagado")){
 
                 builder.setTitle("Fecha boleta emitida: ${pagos.FechaEmitido}")

@@ -82,8 +82,8 @@ class Login : AppCompatActivity(), EasyPermissions.PermissionCallbacks {
             loading.isDismiss()
         },2000)
 
-        //val url = "http://192.168.18.224/App/BD-NOVA/login.php"
-        val url = "http://192.168.1.9/App/BD-NOVA/login.php"
+        //val url = "http://192.168.74.59/login.php"
+        val url = "http://192.168.1.5/App/BD-NOVA/login.php"
 
         val queue = Volley.newRequestQueue(this)
 

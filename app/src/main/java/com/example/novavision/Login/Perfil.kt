@@ -35,11 +35,7 @@ class Perfil : AppCompatActivity() {
         cargarDatos(usuario)
 
         binding.GuardarCambios.setOnClickListener() {
-            if (binding.ContrasenaNueva.text.isEmpty()){
-                ActualizarInfoUsuario(usuario)
-            }else{
                 ActualizarInfoUsuarioNuevaContraseña(usuario)
-            }
         }
 
     }
@@ -55,13 +51,11 @@ class Perfil : AppCompatActivity() {
         //Se realiza consulta por medio de Volley (complemento de android studio)
         val queue = Volley.newRequestQueue(this)
 
-        val correo = binding.Correo.text
         val contrasenia = binding.ContrasenaNueva.text
-        val telefono = binding.Telefono.text
 
         //URL de donde se realiza la consulta sql
-        //val url = "http://192.168.18.224/App/BD-NOVA/actualizarUsuario.php?id_cliente=$usuario&movil=$telefono&codigo=$contrasenia&correo=$correo"
-        val url = "http://192.168.1.9/App/BD-NOVA/actualizarUsuario.php?id_cliente=$usuario&movil=$telefono&codigo=$contrasenia&correo=$correo"
+        //val url = "http://192.168.74.59/actualizarUsuario.php?id_cliente=$usuario&codigo=$contrasenia"
+        val url = "http://192.168.1.5/App/BD-NOVA/actualizarUsuario.php?id_cliente=$usuario&codigo=$contrasenia"
 
         val stringRequest = StringRequest(Request.Method.GET, url, { response ->
 
@@ -83,8 +77,8 @@ class Perfil : AppCompatActivity() {
 
         val queue = Volley.newRequestQueue(this)
 
-        //val url = "http://192.168.18.224/App/BD-NOVA/usuario.php?id_cliente=$usuario"
-        val url = "http://192.168.1.9/App/BD-NOVA/usuario.php?id_cliente=$usuario"
+        //val url = "http://192.168.74.59/usuario.php?id_cliente=$usuario"
+        val url = "http://192.168.1.5/App/BD-NOVA/usuario.php?id_cliente=$usuario"
 
         val stringRequest = StringRequest(Request.Method.GET, url, { response ->
 
@@ -132,32 +126,6 @@ class Perfil : AppCompatActivity() {
         }, {
             Toast.makeText(this, "No fue posible la conexión", Toast.LENGTH_SHORT).show()
         })
-        queue.add(stringRequest)
-
-    }
-    private fun ActualizarInfoUsuario(usuario:String){
-
-        //Se realiza consulta por medio de Volley (complemento de android studio)
-        val queue = Volley.newRequestQueue(this)
-
-        //URL de donde se realiza la consulta sql
-        val correo = binding.Correo.text
-        val contraseniaAntigua = binding.ContrasenaAntigua.text
-        val telefono = binding.Telefono.text
-
-        //val url = "http://192.168.18.224/Apps/Base%20de%20datos%20-%20NOVAVISION/actualizarUsuario.php?id_cliente=$usuario&movil=$telefono&codigo=$contraseniaAntigua&correo=$correo"
-        val url = "http://192.168.1.9/Apps/Base%20de%20datos%20-%20NOVAVISION/actualizarUsuario.php?id_cliente=$usuario&movil=$telefono&codigo=$contraseniaAntigua&correo=$correo"
-
-        val stringRequest = StringRequest(Request.Method.GET, url, { response ->
-
-        Toast.makeText(this,"Datos actualizados",Toast.LENGTH_SHORT).show()
-
-        cargarDatos(usuario)
-
-        }, {
-            Toast.makeText(this, "No fue posible la conexión", Toast.LENGTH_SHORT).show()
-        })
-
         queue.add(stringRequest)
 
     }
