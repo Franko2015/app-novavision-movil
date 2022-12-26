@@ -55,7 +55,7 @@ class Perfil : AppCompatActivity() {
 
         //URL de donde se realiza la consulta sql
         //val url = "http://192.168.74.59/actualizarUsuario.php?id_cliente=$usuario&codigo=$contrasenia"
-        val url = "http://192.168.1.5/App/BD-NOVA/actualizarUsuario.php?id_cliente=$usuario&codigo=$contrasenia"
+        val url = "http://192.168.191.251/App/BD-NOVA/actualizarUsuario.php?id_cliente=$usuario&codigo=$contrasenia"
 
         val stringRequest = StringRequest(Request.Method.GET, url, { response ->
 
@@ -78,7 +78,7 @@ class Perfil : AppCompatActivity() {
         val queue = Volley.newRequestQueue(this)
 
         //val url = "http://192.168.74.59/usuario.php?id_cliente=$usuario"
-        val url = "http://192.168.1.5/App/BD-NOVA/usuario.php?id_cliente=$usuario"
+        val url = "http://192.168.191.251/App/BD-NOVA/usuario.php?id_cliente=$usuario"
 
         val stringRequest = StringRequest(Request.Method.GET, url, { response ->
 

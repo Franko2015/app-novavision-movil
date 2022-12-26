@@ -1,6 +1,7 @@
 package com.example.novavision.Login
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
@@ -12,14 +13,14 @@ import android.view.View
 import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.android.volley.Request
-import com.android.volley.toolbox.StringRequest
-import com.android.volley.toolbox.Volley
 import com.example.novavision.Principal.MainActivity
 import com.example.novavision.R
 import com.example.novavision.databinding.ActivityLoginBinding
 import org.json.JSONArray
 import org.json.JSONObject
+import com.android.volley.Request
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
 import pub.devrel.easypermissions.AppSettingsDialog
 import pub.devrel.easypermissions.EasyPermissions
 import java.util.*
@@ -64,6 +65,7 @@ class Login : AppCompatActivity(), EasyPermissions.PermissionCallbacks {
         startActivity(i)
     }
 
+    @SuppressLint("SuspiciousIndentation")
     private fun IniciarSesion(){
 
         val usuario = binding.User.text.toString()
@@ -83,7 +85,7 @@ class Login : AppCompatActivity(), EasyPermissions.PermissionCallbacks {
         },2000)
 
         //val url = "http://192.168.74.59/login.php"
-        val url = "http://192.168.1.5/App/BD-NOVA/login.php"
+        val url = "http://192.168.191.251/App/BD-NOVA/login.php"
 
         val queue = Volley.newRequestQueue(this)
 

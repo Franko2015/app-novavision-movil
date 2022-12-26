@@ -60,7 +60,7 @@ class PaymentsFragment : Fragment() {
         val queue = Volley.newRequestQueue(context)
 
         //url = "http://192.168.74.59/boletas.php?id_cliente=$usuario"
-        url = "http://192.168.1.5/App/BD-NOVA/boletas.php?id_cliente=$usuario"
+        url = "http://192.168.191.251/App/BD-NOVA/boletas.php?id_cliente=$usuario"
 
         val stringRequest = StringRequest(Request.Method.GET, url, { response ->
 

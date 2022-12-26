@@ -59,7 +59,7 @@ class NotificationsFragment : Fragment() {
         val queue = Volley.newRequestQueue(context)
 
         //url = "http://192.168.74.59/notificaciones.php?id_cliente=$usuario"
-        url = "http://192.168.1.5/App/BD-NOVA/notificaciones.php?id_cliente=$usuario"
+        url = "http://192.168.191.251/App/BD-NOVA/notificaciones.php?id_cliente=$usuario"
 
         val stringRequest = StringRequest(Request.Method.GET, url, { response ->
 

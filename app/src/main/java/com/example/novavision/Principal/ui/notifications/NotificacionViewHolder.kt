@@ -2,7 +2,6 @@ package com.example.novavision.Principal.ui.notifications
 
 import android.annotation.SuppressLint
 import android.app.AlertDialog
-import android.content.DialogInterface
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.example.novavision.databinding.TarjetaNotificacionesBinding
